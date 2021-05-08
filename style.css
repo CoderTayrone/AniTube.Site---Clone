@@ -1,0 +1,523 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btn-menu: #DA062E;
+    --bcg-logo: #930013;
+}
+body{
+    color: #fff;background-color: #000;
+}
+li{
+    list-style: none;
+    margin-right: 24px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.containerHeader, .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.nav-links li a{
+    font-size: 12px;
+}
+.nav-links li a img{
+    width: 36px;
+    margin-bottom: -10px;
+}
+
+.containerH{
+    height: 75px;
+    background-color: var(--btn-menu);
+}
+
+.containerHeader{
+    max-width: 1280px;
+    margin: auto;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--btn-menu);    /* color of the scroll thumb */
+  }
+  body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1A1A1A;        /* color of the tracking area */
+  }
+.containerHeader input{
+    width: 300px;
+    height: 35px;
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+    border: transparent;
+}
+.containerSearchLetter{
+    height: 49px;
+    background-color: #1A1A1A;
+    border: 1px solid red;
+}
+.containerSearchLetter h2{
+    max-width: 1280px;
+}
+/*Logo*/
+.containerLogo{
+    background: var(--bcg-logo);
+    position: relative;
+    padding: 18px;
+    transform: rotate(20deg);
+    height: 160px;
+    width: 200px;
+    margin-left: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.containerLogo img{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    transform: rotate(-20deg);
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Container Aviso*/
+
+.containerAviso{
+    max-width: 1280px;
+    height: 37px;
+    margin: 48px auto 0px auto;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+.contentI{
+    background-color: #DA062E;
+    height: 37px;
+    width: 70px;
+    text-align: center;
+}
+ .contentI img{
+    width: auto;
+    height: 37px;
+} 
+
+.contentText{
+    background-color: #27AE60;
+    width: 100%;
+    padding: 8px
+}
+
+.contentText p{
+    font-size: 18px;
+}
+
+
+
+/*Container Destaques*/
+
+
+
+.containerDestaques{
+    max-width: 1280px;
+    margin: 20px auto ;   
+    padding: 50px 10px 20px 10px; 
+    position: relative;
+    border: 3px solid var(--btn-menu);
+}
+.titleDestaques{
+    padding: 0px 20px;
+    position: absolute;
+    background-color: black;
+    top: -12px;
+    left: 32px;
+}
+.titleDestaques h2{
+    font-size: 14px;
+}
+.cardsDestaques{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.cardDestaque{
+    max-width: 200px;
+    text-align: center;
+}
+.cardDestaque img{
+    width: 200px;
+    height: 270px;
+}
+.contentCardDestaque{
+    margin-top: -16px;
+}
+.contentCardDestaque button{
+    background: var(--btn-menu);
+    color: #fff;
+    text-align: center;
+    border: transparent;
+    height: 26px;
+    width: 180px;
+}
+.contentCardDestaque h2{
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.containerSearchLetter{
+    display: flex;
+    align-items: center;
+}
+.containerSearchLetter h2{
+    max-width: 960px;
+    margin: auto;
+    align-items: center;
+    font-size: 22px;
+    padding-right: 12rem;
+}
+
+
+/*Container Ultimos Ep*/
+
+.containerUltimosEpisodios{
+    max-width: 1280px;
+    margin: 30px auto ;   
+    position: relative;
+    border-top: 3px solid var(--btn-menu);
+}
+.titleUltimosEp{
+    min-width: 200px;
+    padding: 5px 15px;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;    
+}
+.titleUltimosEp h2{
+    font-size: 14px;
+}
+.cardsUltimosEp{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    margin-top: 16px;
+
+}
+
+.cardUltimosEp{
+    width: 311px;
+    position: relative;
+   /*  display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.cardUltimosEp img{
+    width: 311px;
+    height: 160px;
+}
+.contentCardUltimosEp{
+    margin-top: -16px;
+}
+.contentCardUltimosEp button{
+    width: 233px;
+    padding: 5px 0px;
+    margin: 0px 38px;
+    background-color: var(--btn-menu);
+    color: #fff;
+    border: transparent;
+}
+.contentCardUltimosEp h2{
+    margin: 22px 0px;
+    font-size: 18px;
+    color: #9a9a9a;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+.contentCardUltimosEp h2 img{
+    width: 30px;
+    height: 30px;
+}
+
+.buttonVerMais{
+    width: 100px;
+    background-color: var(--btn-menu);
+    margin-left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.buttonVerMais h2{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+
+
+/*Page Anime Profile */
+
+.containerAnimeDetails{
+    max-width: 1280px;
+    margin: 24px auto;
+    background-color: #222222;
+    padding: 10px;
+    height: 521px;
+}
+.containerAnimeProfile{
+    display: flex;    
+}
+
+.colProfile{
+    width: 216px;
+}
+.colProfile img{
+    width: 100%;
+    height: 331px;
+    border: 2px solid var(--btn-menu);
+}
+.colProfile button {
+    width: 100%;
+    height: 40px;
+    padding: 0px 24px;
+    background: var(--btn-menu);
+    border: transparent;
+    color: #fff;
+    text-align: start;
+    margin-top: 10px;
+}
+.colContentProfile{
+    flex: 1;
+    padding: 5px 10px;
+}
+.colContentProfile p{
+    border-bottom: 1px dotted rgba( 256, 256, 256, 0.06);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+.colContentProfile p span{
+    font-weight: normal;
+}
+
+.containerDescriptionAnimeProfile{
+    background: #1d1d1d;
+    margin-top: 10px;
+    color: #fff;
+}
+.containerDescriptionAnimeProfile p{
+    font-size: 14px;
+    padding: 10px;
+}
+.containerDescriptionAnimeProfile h4{
+    font-size: 14px;
+    padding: 5px 10px 18px 10px;
+}
+
+
+/*Container Adsense*/
+.containerAds{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 24px;
+}
+.containerAds img{
+    width: 300px;height: 250px;
+}
+
+
+.containerListEpisodes{
+    max-width: 1280px;
+    margin: auto;
+}
+.headerListEpisode, .headerFormComentarios{
+    max-width: 1280px;
+    max-height: 40px;
+    margin: 12px auto 0px auto;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #da062e;    
+}
+.headerListEpisode h3{
+    font-size: 14px;
+}
+.OpenListIcon img, .OpenFormIcon img{
+    max-width: 30px;
+    cursor: pointer;
+}
+
+
+/*Aqui*/
+.active{
+    display: none;
+}
+
+
+.rowListEpisodes{
+    padding: 10px 0px;
+    background-color: #222222;
+    margin-bottom: 12px;
+}
+.colEpisode{
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px dotted rgba( 256, 256, 256, 0.08);
+    background-color: #1d1d1d;
+}
+.colEpisode a{
+    font-size: 16px;
+}
+.colEpisode a span{
+    margin-left: 12px;
+}
+.colEpisode:hover{
+    background-color: #1a1a1a;
+}
+
+
+
+/*Container COmentários*/
+.container{
+    max-width: 1280px;
+    margin: auto;
+    background-color: #1d1d1d;
+}
+.containerFormComentarios{
+    padding: 10px;
+}
+.containerFormComentarios form{
+    display: flex;
+    flex-direction: column;
+}
+.containerFormComentarios form label{
+    font-size: 15px;
+    color: #fff;
+    margin: 20px 0 10px 0;
+}
+.containerFormComentarios form label:first-child{
+    font-size: 15px;
+    color: #da062e;
+    margin: 10px 0 5px 0;
+}
+.containerFormComentarios form textarea{
+    background-color: #222222;
+    color: #fff;
+    height: 100px;
+    border: none;
+    padding: 10px;
+}
+.containerFormComentarios form input{
+    background-color: #222222;
+    color: #fff;
+    height: 35px;
+    border: none;
+    padding: 10px;
+}
+.radioForm{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.containerFormComentarios form button{
+    width: 141px;height: 37px;
+    align-items: center;
+    color: #da062e;
+    background:#222222;
+    border: transparent;
+}
+.containerFormComentarios form button:hover{
+    color: #fff;
+    transition: 0.4s;
+    background: #da062e;
+}
+
+
+/*Comment*/
+
+.rowComentario, .rowSubComentario{
+    display: flex;
+    margin: 12px 0;
+}
+.rowSubComentario{
+    padding: 0 60px;
+}
+.contentAvatarComment{
+    margin-left: 12px;
+}
+.colAvatarComment img{
+    border-radius: 50%;
+}
+
+.contentAvatarComment h3{
+    font-size: 15px;
+    margin: 5px 0;
+}
+.contentAvatarComment h3 span{
+    font-size: 15px;
+    margin-left: 6px;
+}
+.contentAvatarComment h3 span:first-child{
+    background-color: #da062e;
+    padding: 3px 4px;
+    font-size: 14px;
+}
+.contentAvatarComment p{
+    font-size: 14px;
+}
+.contentAvatarComment h3 span:last-child{
+    font-size: 14px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+
+
+/*Footer*/
+footer{
+    background-image: url(Assets/footer.png);
+}
+.containerFooter{
+    max-width: 1280px;
+    min-height: 345px;
+    padding-top: 100px;
+
+    margin: 12px auto 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.colFooter h2{
+    border-bottom: 3px solid #da062e;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.colFooter p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.containerCredits{
+    margin: auto;
+    background-color: #222222;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
