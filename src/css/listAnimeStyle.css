@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerListAnimes{
+    max-width: 1280px;
+    margin: 48px auto;
+    position: relative;
+    border-top:  3px solid #da062e;
+    padding: 20px 0;
+}
+
+.itemBuscadorAnimes{
+    max-width: 138px;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #222222;
+    color: #da062e;
+    font-size: 18px;
+    flex: 1 0 130px; 
+}
+.itemBuscadorAnimes:hover{
+    background-color: #111111;
+    transition: 0.2s;
+}
+
+
+.titleDestaquesAnimes{
+    position: absolute;
+    top: -16px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+.containerBuscadorAnimes{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+}

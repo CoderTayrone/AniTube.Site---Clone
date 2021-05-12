@@ -147,8 +147,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
 }
 .cardsDestaques{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 .cardDestaque{
     max-width: 200px;

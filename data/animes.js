@@ -22,16 +22,42 @@ const animesCollections = [{
             emailUser: 'tayrone.contato@gmail.com',
             message: 'Best Anime',
             dataComment: '28/04/2021',
-            subComments: [{
-                idSubComment: 1,
-                nameUser: 'Guerra',
-                emailUser: 'guerra@gmail.com',
-                message: 'Yeah Bro.',
-                dataComment: '29/04/2021',
-            }]
         }],
     }
-],
+],  comments: [{
+    nameUser: 'Tayrone',
+    emailUser: 'tayrone.contato@gmail.com',
+    message: 'Best Anime',
+    dataComment: '28/04/2021',
+}],
     year: '2021',
     likest: '15402',    
 }];
+const formComent = document.querySelector('#formComent');
+const formName = document.querySelector('#formName');
+const formEmail = document.querySelector('#formEmail');
+const btnSubmit = document.querySelector('#btnSubmit');
+
+btnSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    addComment(formName.value, formEmail.value, formComent.value);
+})
+
+
+function addComment(name, email, message, data = '11/05/2021' ){
+
+ 
+
+    animesCollections.comments.push({
+
+        nameUser: name, 
+        emailUser: email, 
+        message: message, 
+        dataComment: data,
+
+    });
+    animesCollections.comments.forEach(comment => console.log(comment.nameUser));
+    
+
+}
